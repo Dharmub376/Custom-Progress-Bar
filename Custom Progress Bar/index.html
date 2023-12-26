@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Custom Progress Bar</title>
+</head>
+<body>
+  <div class="container">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="time-display">
+      <span id="currentTime">00:00</span>
+      <span>/</span>
+      <span id="totalTime">00:00</span>
+    </div>
+    <div class="input-container">
+      <label for="duration">Set Duration (seconds): </label>
+      <input type="number" id="duration" min="1" value="30">
+      <button onclick="startProgress()">Start</button>
+      <button onclick="resetProgress()">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
